@@ -1,4 +1,4 @@
-const Booking = require('../models/Booking');
+const Booking = require('../models/booking');
 
 exports.getBookings = async (req, res) => {
     const data = await Booking.find().sort({ _id: -1 });
