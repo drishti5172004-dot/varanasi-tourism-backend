@@ -1,4 +1,4 @@
-const Contact = require('../models/Contact');
+const Contact = require('../models/contact');
 
 exports.getMessages = async (req, res) => {
     const data = await Contact.find().sort({ _id: -1 });
